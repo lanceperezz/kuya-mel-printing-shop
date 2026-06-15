@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
 body {
-    line-height: 1.5;
+    background: #f5f5f5;
+    color: #222;
 }
 
 /* HEADER */
@@ -14,10 +16,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: #222;
+    background: #1f2937;
     color: white;
 }
 
+/* LOGO FIX (THIS IS IMPORTANT) */
 .logo {
     display: flex;
     align-items: center;
@@ -25,8 +28,9 @@ header {
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+    width: 45px;   /* FIXES BIG IMAGE ISSUE */
+    height: 45px;
+    object-fit: cover;
 }
 
 /* NAV */
@@ -38,21 +42,29 @@ nav a {
 
 /* HERO */
 .hero {
-    padding: 60px 20px;
     text-align: center;
+    padding: 80px 20px;
+    background: white;
 }
 
 .hero h1 {
+    font-size: 28px;
     margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
 }
 
 /* INTRO */
 .intro {
-    padding: 40px 20px;
     text-align: center;
+    padding: 50px 20px;
 }
 
 .intro p {
-    max-width: 700px;
+    max-width: 650px;
     margin: auto;
+    line-height: 1.6;
 }
