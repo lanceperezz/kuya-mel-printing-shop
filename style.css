@@ -1,59 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+h1, h2, .brand-info h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 80px;
+    padding: 0 80px;
+    height: 120px;
     background: #0f172a;
     color: white;
+    position: relative;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.brand-info h2 {
+    font-size: 22px;
+    color: #ffffff;
 }
 
-.logo img {
-    width: 85px;  
-    height: 85px;
-    border-radius: 16px;
-    background: white;
-    padding: 6px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2); 
-}
-
-.logo h2 {
-    font-size: 20px; 
-    font-weight: 700;
-}
-
-.logo p {
-    font-size: 14px;
-    color: #cbd5e1;
+.brand-info p {
+    font-size: 13px;
+    color: #94a3b8;
     margin-top: 4px;
+    font-weight: 500;
+}
+
+.logo-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15px;
+    z-index: 10;
+}
+
+.center-logo {
+    width: 210px;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.25));
 }
 
 nav {
     display: flex;
-    gap: 30px; 
+    gap: 28px;
 }
 
 nav a {
-    color: white;
+    color: #94a3b8;
     text-decoration: none;
     font-weight: 600;
     font-size: 15px;
-    transition: color 0.3s ease;
+    transition: color 0.25s ease;
+}
+
+nav a:hover, nav a.active {
+    color: #38bdf8;
 }
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 160px 20px 80px 20px;
     background: #ffffff;
-    border-bottom: 1px solid #e2e8f0; 
+    box-shadow: 0 4px 30px rgba(15, 23, 42, 0.03);
 }
 
 .hero h1 {
-    font-size: 48px; 
+    font-size: 44px;
+    color: #0f172a;
     margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 680px;
+    margin: 0 auto;
+    color: #475569;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.intro {
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    color: #0f172a;
+    margin-bottom: 16px;
+}
+
+.intro p {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #475569;
 }
