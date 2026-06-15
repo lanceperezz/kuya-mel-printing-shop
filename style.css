@@ -6,8 +6,8 @@
 }
 
 body {
-    background: #f5f5f5;
-    color: #222;
+    background: #f4f6f9;
+    color: #1f1f1f;
 }
 
 /* HEADER */
@@ -15,56 +15,78 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
-    background: #1f2937;
+    padding: 20px 40px;
+    background: #111827;
     color: white;
 }
 
-/* LOGO FIX (THIS IS IMPORTANT) */
+/* LOGO SECTION (MAKES IT MORE NOTICEABLE) */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .logo img {
-    width: 45px;   /* FIXES BIG IMAGE ISSUE */
-    height: 45px;
-    object-fit: cover;
+    width: 70px;        /* BIGGER LOGO */
+    height: 70px;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
 }
 
-/* NAV */
+.logo h2 {
+    font-size: 18px;
+}
+
+.logo p {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+/* NAVIGATION */
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 15px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
     background: white;
 }
 
 .hero h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
+    color: #555;
 }
 
 /* INTRO */
 .intro {
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+}
+
+.intro h2 {
+    margin-bottom: 10px;
 }
 
 .intro p {
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
     line-height: 1.6;
+    color: #444;
 }
