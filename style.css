@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: #f4f6f9;
-    color: #1f1f1f;
+    background: #f5f7fb;
+    color: #111;
 }
 
 /* HEADER */
@@ -15,12 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background: #111827;
+    padding: 18px 50px;
+    background: #0f172a;
     color: white;
 }
 
-/* LOGO SECTION (MAKES IT MORE NOTICEABLE) */
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
@@ -28,15 +28,16 @@ header {
 }
 
 .logo img {
-    width: 70px;        /* BIGGER LOGO */
-    height: 70px;
-    border-radius: 10px;
+    width: 65px;
+    height: 65px;
+    border-radius: 12px;
     background: white;
-    padding: 5px;
+    padding: 4px;
 }
 
 .logo h2 {
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .logo p {
@@ -44,49 +45,53 @@ header {
     color: #cbd5e1;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
+    font-weight: 500;
     font-size: 14px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #38bdf8;
 }
 
 /* HERO */
 .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 110px 20px;
     background: white;
 }
 
 .hero h1 {
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .hero p {
     max-width: 650px;
     margin: auto;
     color: #555;
+    font-size: 16px;
 }
 
 /* INTRO */
 .intro {
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 .intro h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .intro p {
-    max-width: 700px;
+    max-width: 750px;
     margin: auto;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #444;
 }
