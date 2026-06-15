@@ -2,93 +2,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    background: #f8fafc;
-    color: #0f172a;
+    background: #f5f7fb;
+    color: #111111;
 }
 
 h1, h2, .brand-info h2 {
-    font-family: 'Syne', sans-serif;
+    font-family: 'Archivo', sans-serif;
     font-weight: 800;
-    letter-spacing: -0.5px;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
-    height: 120px;
+    padding: 0 50px;
+    height: 140px;
     background: #0f172a;
     color: white;
     position: relative;
 }
 
 .brand-info h2 {
-    font-size: 22px;
+    font-size: 24px;
     color: #ffffff;
 }
 
 .brand-info p {
     font-size: 13px;
-    color: #94a3b8;
+    color: #cbd5e1;
     margin-top: 4px;
-    font-weight: 500;
 }
 
 .logo-wrapper {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: 15px;
-    z-index: 10;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .center-logo {
-    width: 210px;
+    width: 250px;
     height: auto;
     display: block;
-    filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.25));
 }
 
 nav {
     display: flex;
-    gap: 28px;
+    gap: 24px;
 }
 
 nav a {
-    color: #94a3b8;
+    color: white;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
-    transition: color 0.25s ease;
 }
 
-nav a:hover, nav a.active {
+nav a.active {
     color: #38bdf8;
 }
 
 .hero {
     text-align: center;
-    padding: 160px 20px 80px 20px;
+    padding: 180px 20px 100px 20px;
     background: #ffffff;
-    box-shadow: 0 4px 30px rgba(15, 23, 42, 0.03);
 }
 
 .hero h1 {
     font-size: 44px;
-    color: #0f172a;
-    margin-bottom: 20px;
+    color: #111111;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    max-width: 680px;
+    max-width: 650px;
     margin: 0 auto;
-    color: #475569;
-    font-size: 17px;
+    color: #555555;
+    font-size: 16px;
     line-height: 1.6;
 }
 
@@ -99,14 +96,14 @@ nav a:hover, nav a.active {
 
 .intro h2 {
     font-size: 28px;
-    color: #0f172a;
-    margin-bottom: 16px;
+    color: #111111;
+    margin-bottom: 15px;
 }
 
 .intro p {
-    max-width: 780px;
+    max-width: 750px;
     margin: 0 auto;
     font-size: 16px;
-    line-height: 1.75;
-    color: #475569;
+    line-height: 1.7;
+    color: #444444;
 }
